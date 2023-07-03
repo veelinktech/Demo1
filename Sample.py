@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
 
-def setup_module(module):
+def setup_module():
     global driver
 
     s = Service(executable_path="D:\\SeleniumDrivers\\chromedriver_win32_latest\\chromedriver.exe")
@@ -13,7 +13,7 @@ def setup_module(module):
     driver.implicitly_wait(30)
 
 
-def teardown_module(module):
+def teardown_module():
     driver.close()
 
 
