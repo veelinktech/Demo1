@@ -25,3 +25,9 @@ def test_verifyUrl():
     actual_url = driver.current_url
     assert actual_url == "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
 
+
+def test_verifyLoginText():
+    actual_text = driver.find_element(By.XPATH, "//h5[text()='Login']").text
+    assert actual_text == "Login"
+
+
