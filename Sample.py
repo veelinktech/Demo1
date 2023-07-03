@@ -21,4 +21,7 @@ def test_verifyTitle():
     actual_title = driver.title
     assert actual_title == "OrangeHRM"
 
+def test_verifyUrl():
+    actual_url = driver.current_url
+    assert actual_url == "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
 
