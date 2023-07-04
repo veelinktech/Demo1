@@ -30,4 +30,7 @@ def test_verifyLoginText():
     actual_text = driver.find_element(By.XPATH, "//h5[text()='Login']").text
     assert actual_text == "Login"
 
+def test_m1():
+    assert 5==5
+
 
