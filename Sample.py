@@ -34,3 +34,10 @@ def test_m1():
     assert 5==5
 
 
+def test_m2():
+    assert 5>=2
+
+def test_m3():
+    assert 10+5==15
+
+
